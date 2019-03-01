@@ -1,23 +1,28 @@
 - Getting started
-  - [示例](/test.md)
-  - [Quick start](/quickstart.md)
-  - [Writing more pages](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/more-pages.md)
-  - [Custom navbar](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/custom-navbar.md)
-  - [Cover page](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/cover.md)
+
+  - [Quick start](quickstart.md)
+  - [Writing more pages](more-pages.md)
+  - [Custom navbar](custom-navbar.md)
+  - [Cover page](cover.md)
+
 - Customization
-  - [Configuration](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/configuration.md)
-  - [Themes](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/themes.md)
-  - [List of Plugins](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/plugins.md)
-  - [Write a Plugin](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/write-a-plugin.md)
-  - [Markdown configuration](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/markdown.md)
-  - [Language highlighting](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/language-highlight.md)
+
+  - [Configuration](configuration.md)
+  - [Themes](themes.md)
+  - [List of Plugins](plugins.md)
+  - [Write a Plugin](write-a-plugin.md)
+  - [Markdown configuration](markdown.md)
+  - [Language highlighting](language-highlight.md)
+
 - Guide
-  - [Deploy](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/deploy.md)
-  - [Helpers](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/helpers.md)
-  - [Vue compatibility](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/vue.md)
-  - [CDN](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/cdn.md)
-  - [Offline Mode(PWA)](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/pwa.md)
-  - [Server-Side Rendering(SSR)](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/ssr.md)
-  - [Embed Files](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/embed-files.md)
-- [Awesome docsify](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/awesome.md)
-- [Changelog](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/changelog.md)
+
+  - [Deploy](deploy.md)
+  - [Helpers](helpers.md)
+  - [Vue compatibility](vue.md)
+  - [CDN](cdn.md)
+  - [Offline Mode(PWA)](pwa.md)
+  - [Server-Side Rendering(SSR)](ssr.md)
+  - [Embed Files](embed-files.md)
+
+- [Awesome docsify](awesome.md)
+- [Changelog](changelog.md)

@@ -1,41 +1,32 @@
-# Welcome read me !
+## docsify
 
-> An awesome project.
+> A magical documentation site generator.
 
-:palm_tree:
+## What it is
 
-```java
-public static void main(String[] args) {
-	SpringApplication.run(ProfilesApplication.class, args);
-}
-```
+docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an `index.html` and [deploy it on GitHub Pages](deploy.md).
 
+See the [Quick start](quickstart.md) guide for more details.
 
+## Features
 
+- No statically built html files
+- Simple and lightweight (~21kB gzipped)
+- Smart full-text search plugin
+- Multiple themes
+- Useful plugin API
+- Emoji support
+- Compatible with IE10+
+- Support server-side rendering ([example](https://github.com/docsifyjs/docsify-ssr-demo))
 
+## Examples
 
-```html
-<div class="text-center block hidden-xs">
-    <script type="text/javascript">
-        OA_show(2);
-    </script>
-</div>
-```
+Check out the [Showcase](https://github.com/docsifyjs/docsify/#showcase) to see docsify in use.
 
-```java
-public static void main(String[] args) {
-    List<Long> obj1 = new ArrayList<>(Arrays.asList(1L, 2L, 3L, 4L));
-    List<Long> obj2 = new ArrayList<>(Arrays.asList(5L, 2L, 3L, 4L));
+## Donate
 
-    for (int i = 0; i < obj2.size(); i++) {
-        System.err.println(obj2.get(i));
-        if (obj1.remove(obj2.get(i))) {
-            obj2.remove(i);
-            i--;
-        }
-    }
-    System.out.println(obj1);
-    System.out.println(obj2);
-}
-```
+Please consider donating if you think docsify is helpful to you or that my work is valuable. I am happy if you can help me [buy a cup of coffee](https://github.com/QingWei-Li/donate). :heart:
 
+## Community
+
+Users and the development team are usually in the [Gitter chat room](https://gitter.im/docsifyjs/Lobby).

@@ -2,7 +2,7 @@
 
 It is recommended to install `docsify-cli` globally, which helps initializing and previewing the website locally.
 
-```
+```bash
 npm i docsify-cli -g
 ```
 
@@ -10,7 +10,7 @@ npm i docsify-cli -g
 
 If you want to write the documentation in the `./docs` subdirectory, you can use the `init` command.
 
-```
+```bash
 docsify init ./docs
 ```
 
@@ -18,17 +18,17 @@ docsify init ./docs
 
 After the `init` is complete, you can see the file list in the `./docs` subdirectory.
 
-- `index.html` as the entry file
-- `README.md` as the home page
-- `.nojekyll` prevents GitHub Pages from ignoring files that begin with an underscore
+* `index.html` as the entry file
+* `README.md` as the home page
+* `.nojekyll` prevents GitHub Pages from ignoring files that begin with an underscore
 
-You can easily update the documentation in `./docs/README.md`, of course you can add [more pages](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/more-pages.md).
+You can easily update the documentation in `./docs/README.md`, of course you can add [more pages](more-pages.md).
 
 ## Preview your site
 
 Run the local server with `docsify serve`. You can preview your site in your browser on `http://localhost:3000`.
 
-```
+```bash
 docsify serve docs
 ```
 
@@ -38,7 +38,7 @@ docsify serve docs
 
 If you don't like `npm` or have trouble installing the tool, you can manually create `index.html`:
 
-```
+```html
 <!-- index.html -->
 
 <!DOCTYPE html>
@@ -63,7 +63,7 @@ If you don't like `npm` or have trouble installing the tool, you can manually cr
 
 If you installed python on your system, you can easily use it to run a static server to preview your site.
 
-```
+```bash
 cd docs && python -m SimpleHTTPServer 3000
 ```
 
@@ -71,7 +71,7 @@ cd docs && python -m SimpleHTTPServer 3000
 
 If you want, you can show a loading dialog before docsify starts to render your documentation:
 
-```
+```html
   <!-- index.html -->
 
   <div id="app">Please wait...</div>
@@ -79,7 +79,7 @@ If you want, you can show a loading dialog before docsify starts to render your 
 
 You should set the `data-app` attribute if you changed `el`:
 
-```
+```html
   <!-- index.html -->
 
   <div data-app id="main">Please wait...</div>
@@ -91,4 +91,4 @@ You should set the `data-app` attribute if you changed `el`:
   </script>
 ```
 
-Compare [el configuration](https://github.com/docsifyjs/docsify/blob/a35531967a1c418421d811ef3e64c6b94cac2aa6/docs/configuration.md#el).
+Compare [el configuration](configuration.md#el).
