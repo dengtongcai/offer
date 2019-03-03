@@ -7,5 +7,5 @@
 
 
 [GitHub](https://github.com/dengtongcai/interview/)
-[Getting Started](#docsify)
+[Getting Started](#PandoraJava)
 
