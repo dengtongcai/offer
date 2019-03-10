@@ -43,6 +43,9 @@ if (var4 == null) {
         PerfCounter.getFindClasses().increment();
     }
 }
+protected Class<?> findClass(String var1) throws ClassNotFoundException {
+    throw new ClassNotFoundException(var1);
+}
 ```
 
 
