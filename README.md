@@ -8,6 +8,7 @@
 - 多线程
 
   - [Excutors线程池原理](thread/excutors-principle.md)
+  - [如何正确停止线程和关闭线程池](thread/how-to-close-thread-and-threadpool.md)
 
 - 算法
 
@@ -25,3 +26,6 @@
 - IO
 
   
+
+
+
