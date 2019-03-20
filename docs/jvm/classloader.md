@@ -1,13 +1,13 @@
 # ClassLoader
 ## 有哪些类加载器，分别是做什么的？
 
-- BootStrapClassLoader，启动类加载器，调用的是native方法来加载JAVA_HOME/lib下的jar。
+- BootStrapClassLoader<由c++实现属于jvm的一部分，java实现是native方法>：启动类加载器，，用来加载JAVA_HOME/lib/rt.jar。
 
-- ExtentionClassLoader，扩展类加载器，java实现，加载JAVA_HOME/ext下的jar。
+- ExtensionClassLoader<sun.misc.Launcher$ExtClassLoader>：扩展类加载器，java实现，加载JAVA_HOME/ext/*.jar。
 
-- AppClassLoader，系统类加载器，Java实现，加载classpath下的类。
+- AppClassLoader<sun.misc.Launcher$AppClassLoader>：系统类加载器，Java实现，加载classpath下的类。
 
-- UserClassLoader，用户自定义类加载器，用于加载自己编写的类。
+- UserClassLoader：用户自定义类加载器，用于加载自己编写的类。
 
 
 
@@ -18,7 +18,7 @@
 这里的父类加载器并不是继承的关系，而是定义的一个parent变量。
 
 ```java
-//从缓存里面查看是否已经被加载过
+//首先检查是否已经被加载
 Class var4 = this.findLoadedClass(var1);
 //如果没有被加载过那么尝试加载该类
 if (var4 == null) {
@@ -28,21 +28,24 @@ if (var4 == null) {
         if (this.parent != null) {
             var4 = this.parent.loadClass(var1, false);
         } else {
-            //如果父类加载器均无法加载，最后由自己来加载
+            //如果无父类加载器，直接由自己来加载
             var4 = this.findBootstrapClassOrNull(var1);
         }
     } catch (ClassNotFoundException var10) {
+        //如果从父加载器无法加载，抛出异常
     }
-
+	
     if (var4 == null) {
+        //如果依然没有找到，最终调用自己的findclass()方法尝试加载
         long var7 = System.nanoTime();
-        //最终类还未被成功加载，抛出ClassNotFoundException
         var4 = this.findClass(var1);
+        //这是定义类加载器；记录统计数据
         PerfCounter.getParentDelegationTime().addTime(var7 - var5);
         PerfCounter.getFindClassTime().addElapsedTimeFrom(var7);
         PerfCounter.getFindClasses().increment();
     }
 }
+//默认是抛出异常，实际自定义类加载器需要被override
 protected Class<?> findClass(String var1) throws ClassNotFoundException {
     throw new ClassNotFoundException(var1);
 }
@@ -80,3 +83,11 @@ JVM提供的类加载器，只能加载指定目录的jar和class，如果我们
 ## 如何打破双亲委派加载机制？
 
 继承ClassLoader，重写findClass方法。如果要打破双亲委派机制，那么需要重写loadClass方法。
+
+
+
+## tomcat类加载设计
+
+
+
+## OSGi
